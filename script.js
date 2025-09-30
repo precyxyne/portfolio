@@ -76,12 +76,12 @@ function typeWriter(element, text, speed = 100) {
     type();
 }
 
-// Initialize typing animation when page loads
-window.addEventListener('load', () => {
-    const heroTitle = document.querySelector('.hero-title');
-    const originalText = heroTitle.innerHTML;
-    typeWriter(heroTitle, originalText, 50);
-});
+// Initialize typing animation when page loads - DISABLED to preserve HTML formatting
+// window.addEventListener('load', () => {
+//     const heroTitle = document.querySelector('.hero-title');
+//     const originalText = heroTitle.innerHTML;
+//     typeWriter(heroTitle, originalText, 50);
+// });
 
 // Animate statistics numbers
 function animateStats() {
