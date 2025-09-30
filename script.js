@@ -105,13 +105,21 @@ function animateNumber(element, start, end, duration) {
     const increment = range / (duration / 16);
     let current = start;
     
+    // Determine if we should add "+" based on the number
+    const shouldAddPlus = end < 100; // Only add + for smaller numbers like 5, 10
+    
     const timer = setInterval(() => {
         current += increment;
         if (current >= end) {
             current = end;
             clearInterval(timer);
         }
-        element.textContent = Math.floor(current) + '+';
+        
+        if (shouldAddPlus) {
+            element.textContent = Math.floor(current) + '+';
+        } else {
+            element.textContent = Math.floor(current);
+        }
     }, 16);
 }
 
