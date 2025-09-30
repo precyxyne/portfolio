@@ -1125,6 +1125,24 @@ section:not(.hero)::after {
     border-color: #3776ab30;
 }
 
+.tech-tag.java {
+    background: linear-gradient(135deg, #f8981d20, #f8981d10);
+    color: #f8981d;
+    border-color: #f8981d30;
+}
+
+.tech-tag.docker {
+    background: linear-gradient(135deg, #0db7ed20, #0db7ed10);
+    color: #0db7ed;
+    border-color: #0db7ed30;
+}
+
+.tech-tag.aws {
+    background: linear-gradient(135deg, #ff990020, #ff990010);
+    color: #ff9900;
+    border-color: #ff990030;
+}
+
 .project-links {
     display: flex;
     gap: 1rem;
